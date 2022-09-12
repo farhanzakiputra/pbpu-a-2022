@@ -1,0 +1,44 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+/'
+menonaktifkan skin bawaan dari plantUML untuk access modifier (public, private, protected)
+'/
+
+class ECommerce{
+    
+}
+
+class JNE{
+    'atribut'
+    +tarifPengiriman: int
+
+    'method'
+    +reqPengiriman(): String
+}
+
+class JNT{
+    'atribut'
+    +tarifPengiriman: int
+
+    'method'
+    +reqPengiriman(): String
+}
+
+class SiCepat{
+    'atribut'
+    +tarifPengiriman: int
+
+    'method'
+    +reqPengiriman(): String
+}
+
+interface APIdelivery {
+}
+
+JNE ..|> APIdelivery
+JNT ..|> APIdelivery
+SiCepat ..|> APIdelivery
+ECommerce <-- APIdelivery
+
+@enduml
