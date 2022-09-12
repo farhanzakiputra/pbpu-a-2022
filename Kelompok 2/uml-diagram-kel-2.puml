@@ -28,6 +28,14 @@ class SiCepat {
     requestPengiriman(String asal, String tujuan)
 }
 
+class JNT {
+    String nama
+    String idEkspedisi
+    String owner
+    tarifPengiriman(Double jarak, Double berat)
+    requestPengiriman(String asal, String tujuan)
+}
+
 ECommerce --> DeliveryAPI
 DeliveryAPI <|-- JNE
 DeliveryAPI <|-- SiCepat
