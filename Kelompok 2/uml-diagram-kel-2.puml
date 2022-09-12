@@ -20,7 +20,16 @@ class JNE {
     requestPengiriman(String asal, String tujuan)
 }
 
+class SiCepat {
+    String nama
+    String idEkspedisi
+    String owner
+    tarifPengiriman(Double jarak, Double berat)
+    requestPengiriman(String asal, String tujuan)
+}
+
 ECommerce --> DeliveryAPI
 DeliveryAPI <|-- JNE
+DeliveryAPI <|-- SiCepat
 @enduml
 
