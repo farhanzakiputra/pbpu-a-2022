@@ -6,7 +6,12 @@ menonaktifkan skin bawaan dari plantUML untuk access modifier (public, private, 
 '/
 
 class ECommerce{
+    'atribut'
+    +idEcommerce: int
+    +namaEcommerce: String
     
+    'method'
+    +supportMultipleDelivery()
 }
 
 class JNE{
@@ -34,6 +39,8 @@ class SiCepat{
 }
 
 interface APIdelivery {
+    'method'
+    +reqPengiriman()
 }
 
 JNE ..|> APIdelivery
