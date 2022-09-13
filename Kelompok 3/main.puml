@@ -1,4 +1,9 @@
 @startuml Main
+
+Ecommerce --> Expedition
+Expedition <|-- Jnt
+Expedition <|-- Jne
+Expedition <|-- Sicepat
 class Ecommerce {
     - weight int
     - quantity int
