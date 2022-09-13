@@ -30,10 +30,13 @@ class Jnt {
 }
 
 class Sicepat {
-/' #TODO: Populate '/
+    - pilihan_jasa string
+    - layanan_jasa string
+    + returnTarif(weight, source, destination, Expedition) void
+    + menerimaRequest (source, destination) void
 }
 
-/' TODO: Add diagram link '/
+
 
 
 @enduml
