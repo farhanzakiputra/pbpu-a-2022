@@ -37,8 +37,8 @@ class JNT {
 }
 
 ECommerce --> DeliveryAPI
-DeliveryAPI <|-- JNE
-DeliveryAPI <|-- SiCepat
-DeliveryAPI <|-- JNT
+class JNE implements DeliveryAPI
+class JNT implements DeliveryAPI
+class SiCepat implements DeliveryAPI
 @enduml
 
