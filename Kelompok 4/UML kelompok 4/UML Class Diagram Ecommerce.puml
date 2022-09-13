@@ -2,10 +2,33 @@
 ' diagram style
 
 ' diagram relation
+DeliveryApi <|-- Sicepat
+DeliveryApi <|-- JNE
+DeliveryApi <|-- JNT
 
 class Store{
   + deliveryType : DeliveryAPI
   + void delivery(deliveryType : DeliveryAPI)
+}
+
+class Store{
+  + deliveryType : DeliveryAPI
+  + void delivery(deliveryType : DeliveryAPI)
+}
+
+Class Sicepat{
+    +tarifPengiriman(jarak,berat): Int
+    +requestPengiriman(asal,tujuan) : String
+}
+
+Class JNE{
+    +tarifPengiriman(jarak,berat): Int
+    +requestPengiriman(asal,tujuan) : String
+}
+
+Class JNT{
+    +tarifPengiriman(jarak,berat): Int
+    +requestPengiriman(asal,tujuan) : String
 }
 
 @enduml
