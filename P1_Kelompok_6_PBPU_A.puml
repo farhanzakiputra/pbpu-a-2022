@@ -33,4 +33,9 @@ class SiCepat {
 
 Ecommerce "1.." -- "1.." JasaPengiriman
 
+JasaPengiriman <|-- JNE
+JasaPengiriman <|-- JNT
+JasaPengiriman <|-- SiCepat
+class JasaPengiriman implements IJasaPengiriman
+
 @enduml
