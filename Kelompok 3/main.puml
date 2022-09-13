@@ -1,0 +1,12 @@
+@startuml Tester
+class Ecommerce {
+    - weight int
+    - quantity int
+    - price int
+    - destination string
+    - source string
+    + getTarif(weight, quantity, price, source, destination) void
+    + getPickup(weight, quantity, price, expname, source, destination) void
+}
+
+@enduml
