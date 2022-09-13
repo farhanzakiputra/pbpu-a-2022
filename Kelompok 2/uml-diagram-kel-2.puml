@@ -1,42 +1,42 @@
 @startuml
 class ECommerce {
-    String nama
-    String alamatUtama
-    String owner
-    DeliveryAPI deliveryType
-    delivery(DeliveryAPI deliveryType)
+    -String nama
+    -String alamatUtama
+    -String owner
+    +DeliveryAPI deliveryType
+    +delivery(DeliveryAPI deliveryType)
 }
 
 interface DeliveryAPI {
-    tarifPengiriman(Double jarak, Double berat)
-    requestPengiriman(String asal, String tujuan)
+    +tarifPengiriman(Double jarak, Double berat)
+    +requestPengiriman(String asal, String tujuan)
 }
 
 class JNE {
-    String nama
-    String idEkspedisi
-    String idBarang
-    String owner
-    tarifPengiriman(Double jarak, Double berat)
-    requestPengiriman(String asal, String tujuan)
+    -String nama
+    -String idEkspedisi
+    -String idBarang
+    -String owner
+    +tarifPengiriman(Double jarak, Double berat)
+    +requestPengiriman(String asal, String tujuan)
 }
 
 class SiCepat {
-    String nama
-    String idEkspedisi
-    String idBarang
-    String owner
-    tarifPengiriman(Double jarak, Double berat)
-    requestPengiriman(String asal, String tujuan)
+    -String nama
+    -String idEkspedisi
+    -String idBarang
+    -String owner
+    +tarifPengiriman(Double jarak, Double berat)
+    +requestPengiriman(String asal, String tujuan)
 }
 
 class JNT {
-    String nama
-    String idEkspedisi
-    String idBaramg
-    String owner
-    tarifPengiriman(Double jarak, Double berat)
-    requestPengiriman(String asal, String tujuan)
+    -String nama
+    -String idEkspedisi
+    -String idBaramg
+    -String owner
+    +tarifPengiriman(Double jarak, Double berat)
+    +requestPengiriman(String asal, String tujuan)
 }
 
 ECommerce --> DeliveryAPI
