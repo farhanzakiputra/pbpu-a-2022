@@ -11,36 +11,62 @@ class ECommerce{
     +namaEcommerce: String
     
     'method'
-    +supportMultipleDelivery()
+    +support(multipleDelivery)
 }
 
 class JNE{
     'atribut'
-    +tarifPengiriman: int
+    -asalPengiriman: String
+    -tujuanPengiriman: String
+    -beratPengiriman: int
 
     'method'
     +reqPengiriman(): String
+    +tarifPengiriman(
+        asalPengiriman: String, 
+        tujuanPengiriman: String, 
+        beratPengiriman: int
+    ): int
 }
 
 class JNT{
     'atribut'
-    +tarifPengiriman: int
+    -asalPengiriman: String
+    -tujuanPengiriman: String
+    -beratPengiriman: int
 
     'method'
     +reqPengiriman(): String
+    +tarifPengiriman(
+        asalPengiriman: String, 
+        tujuanPengiriman: String, 
+        beratPengiriman: int
+    ): int
 }
 
 class SiCepat{
     'atribut'
-    +tarifPengiriman: int
+    -asalPengiriman: String
+    -tujuanPengiriman: String
+    -beratPengiriman: int
 
     'method'
     +reqPengiriman(): String
+    +tarifPengiriman(
+        asalPengiriman: String, 
+        tujuanPengiriman: String, 
+        beratPengiriman: int
+    ): int
 }
 
 interface APIdelivery {
     'method'
-    +reqPengiriman()
+    +{abstract} reqPengiriman(noInvoice: boolean)
+    +{abstract} tarifPengiriman(
+        asalPengiriman: String, 
+        tujuanPengiriman: String, 
+        beratPengiriman: int
+    )
 }
 
 JNE ..|> APIdelivery
