@@ -11,9 +11,9 @@ class Store{
   + void delivery(deliveryType : DeliveryAPI)
 }
 
-class Store{
-  + deliveryType : DeliveryAPI
-  + void delivery(deliveryType : DeliveryAPI)
+interface DeliveryApi{
+    +tarifPengiriman(jarak,berat): Int
+    +requestPengiriman(asal,tujuan) : String
 }
 
 Class Sicepat{
