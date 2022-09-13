@@ -4,12 +4,12 @@ class ECommerce {
     -String alamatUtama
     -String owner
     +DeliveryAPI deliveryType
-    +delivery(DeliveryAPI deliveryType)
+    +delivery(DeliveryAPI deliveryType): Void
 }
 
 interface DeliveryAPI {
-    +tarifPengiriman(Double jarak, Double berat)
-    +requestPengiriman(String asal, String tujuan)
+    +tarifPengiriman(Double jarak, Double berat): Double
+    +requestPengiriman(String asal, String tujuan): Boolean
 }
 
 class JNE {
@@ -17,8 +17,8 @@ class JNE {
     -String idEkspedisi
     -String idBarang
     -String owner
-    +tarifPengiriman(Double jarak, Double berat)
-    +requestPengiriman(String asal, String tujuan)
+    +tarifPengiriman(Double jarak, Double berat): Double
+    +requestPengiriman(String asal, String tujuan): Boolean
 }
 
 class SiCepat {
@@ -26,8 +26,8 @@ class SiCepat {
     -String idEkspedisi
     -String idBarang
     -String owner
-    +tarifPengiriman(Double jarak, Double berat)
-    +requestPengiriman(String asal, String tujuan)
+    +tarifPengiriman(Double jarak, Double berat): Double
+    +requestPengiriman(String asal, String tujuan): Boolean
 }
 
 class JNT {
@@ -35,8 +35,8 @@ class JNT {
     -String idEkspedisi
     -String idBaramg
     -String owner
-    +tarifPengiriman(Double jarak, Double berat)
-    +requestPengiriman(String asal, String tujuan)
+    +tarifPengiriman(Double jarak, Double berat): Double
+    +requestPengiriman(String asal, String tujuan): Boolean
 }
 
 ECommerce --> DeliveryAPI
