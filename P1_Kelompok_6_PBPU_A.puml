@@ -9,4 +9,11 @@ class Ecommerce {
  +kirimRequestPengiriman(DetailPemesanan dp)
 }
 
+class JasaPengiriman {
+ +idJasaPengiriman: int
+ +nama: String
+ +hitungOngkir(double jarak, double berat)
+ +terimaRequestPemesanan(DetailPemesanan dp): Resi
+}
+
 @enduml
