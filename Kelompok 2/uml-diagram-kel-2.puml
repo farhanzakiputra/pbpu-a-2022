@@ -15,6 +15,7 @@ interface DeliveryAPI {
 class JNE {
     String nama
     String idEkspedisi
+    String idBarang
     String owner
     tarifPengiriman(Double jarak, Double berat)
     requestPengiriman(String asal, String tujuan)
@@ -23,6 +24,7 @@ class JNE {
 class SiCepat {
     String nama
     String idEkspedisi
+    String idBarang
     String owner
     tarifPengiriman(Double jarak, Double berat)
     requestPengiriman(String asal, String tujuan)
@@ -31,6 +33,7 @@ class SiCepat {
 class JNT {
     String nama
     String idEkspedisi
+    String idBaramg
     String owner
     tarifPengiriman(Double jarak, Double berat)
     requestPengiriman(String asal, String tujuan)
