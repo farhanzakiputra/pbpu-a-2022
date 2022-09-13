@@ -5,7 +5,7 @@ File [uml-diagram-kel-2.puml](https://github.com/andrisan-ub/pbpu-a-2022/blob/2-
 ### ECommerce
 Ecommerce merupakan sebuah **class** yang memiliki atribut bersifat private yaitu nama, alamatUtama, owner, dan DeliveryAPI
 Clas Ecommerce juga memiliki sebuah method yang bersifat public, method tersebut adalah :
-1. **delivery(DeliveryAPI deliveryType)**. Method delivery() menerima 1 parameter, yaitu **DeliveryAPI** yang memiliki tipe data deliveryType. Method ini digunakan untuk menentukan jenis API yang digunakan.
+1. **delivery(DeliveryAPI deliveryType)**. Method delivery() menerima 1 parameter, yaitu **deliveryType** yang memiliki tipe data DeliveryAPI. Method ini digunakan untuk menentukan jenis jasa/kurir yang akan digunakan dimana setiap jasa pengiriman merupakan bagian dari DeliveryAPI
 
 ### DeliveryAPI
 DeliveryAPI merupakan sebuah **Interface** yang memiliki dua buah method yang bersifat *public*. Kedua method tersebut yaitu:
