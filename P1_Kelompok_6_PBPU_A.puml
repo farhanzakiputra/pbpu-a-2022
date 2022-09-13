@@ -16,4 +16,13 @@ class JasaPengiriman {
  +terimaRequestPemesanan(DetailPemesanan dp): Resi
 }
 
+class JNE {
+ +hitungOngkir(double jarak, double berat)
+ +terimaRequestPemesanan(DetailPemesanan dp): Resi 
+}
+
+class JNT {
+ +hitungOngkir(double jarak, double berat)
+}
+
 @enduml
