@@ -1,4 +1,4 @@
-@startuml Tester
+@startuml Main
 class Ecommerce {
     - weight int
     - quantity int
@@ -8,5 +8,24 @@ class Ecommerce {
     + getTarif(weight, quantity, price, source, destination) void
     + getPickup(weight, quantity, price, expname, source, destination) void
 }
+
+interface Expedition {
+/' #TODO: Populate '/
+}
+
+class Jne {
+/' #TODO: Populate '/
+}
+
+class Jnt {
+/' #TODO: Populate '/
+}
+
+class Sicepat {
+/' #TODO: Populate '/
+}
+
+/' TODO: Add diagram link '/
+
 
 @enduml
