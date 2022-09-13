@@ -18,7 +18,10 @@ class Jne {
 }
 
 class Jnt {
-/' #TODO: Populate '/
+    - pilihan_jasa string
+    - layanan_jasa string
+    + returnTarif(weight, source, destination, Expedition) void
+    + menerimaRequest (source, destination) void
 }
 
 class Sicepat {
