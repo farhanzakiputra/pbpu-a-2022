@@ -15,7 +15,8 @@ class Ecommerce {
 }
 
 interface Expedition {
-/' #TODO: Populate '/
+    +returnTarif()
+    +menerimaRequest()
 }
 
 class Jne {
