@@ -1,0 +1,12 @@
+@startuml
+
+interface IJasaPengiriman {
+ +hitungOngkir(double jarak, double berat)
+ +terimaRequestPemesanan(DetailPemesanan dp): Resi
+}
+
+class Ecommerce {
+ +kirimRequestPengiriman(DetailPemesanan dp)
+}
+
+@enduml
