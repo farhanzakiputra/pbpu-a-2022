@@ -48,4 +48,30 @@ JNT ..|> APIdelivery
 SiCepat ..|> APIdelivery
 ECommerce <-- APIdelivery
 
+Shipment *-- Order : composition
+
+class Order {
+   +orderID : Integer
+   +dateOrderPlaced : date
+   +totalValue : Integer
+   +recipient : String
+   +deliveryAddress : String
+   +contactPhone : Integer
+   +getCustomerinfo() : String
+}
+
+class Shipment {
+   +shipmentID : Integer
+   +shipmentCompany : String
+   +trackingNumber : String
+   +recipient : String
+   +contactPhone : Integer
+   +deliveryAddress : String
+   +fee : Integer
+   +timePickedUp : date
+   +timeDelivered : date
+   +sent() : boolean
+}
+
+
 @enduml
