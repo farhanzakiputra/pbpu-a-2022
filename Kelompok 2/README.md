@@ -3,6 +3,9 @@ File [uml-diagram-kel-2.puml](https://github.com/andrisan-ub/pbpu-a-2022/blob/2-
 ## Penjelasan Komponen Pada Setiap Class Diagram
 
 ### ECommerce
+Ecommerce merupakan sebuah **class** yang memiliki atribut bersifat private yaitu nama, alamatUtama, owner, dan DeliveryAPI
+Clas Ecommerce juga memiliki sebuah method yang bersifat public, method tersebut adalah :
+1. **delivery(DeliveryAPI deliveryType)**. Method delivery() menerima 1 parameter, yaitu **DeliveryAPI** yang memiliki tipe data deliveryType. Method ini digunakan untuk menentukan jenis API yang digunakan.
 
 ### DeliveryAPI
 DeliveryAPI merupakan sebuah **Interface** yang memiliki dua buah method yang bersifat *public*. Kedua method tersebut yaitu:
@@ -10,18 +13,23 @@ DeliveryAPI merupakan sebuah **Interface** yang memiliki dua buah method yang be
 2. **requestPengiriman(String asal, String tujuan)**. Method requestPengiriman() menerima dua parameter yaitu **asal** dan **tujuan** yang sama-sama bertipe data String yang digunakan untuk menerima request pengiriman yang dilakukan oleh pengirim. Method requestPengiriman() akan mereturn Boolean yang akan bertipe *true* apabila parameter method bersifat valid dan akan mereturn *false* apabila parameter method tidak valid.
 
 ### JNE
-JNE adalah sebuah class dengan atribut public nama, idEkspedisi, idBarang, owner. serta mengimplementasi method dari interface DeliveryAPI yaitu :
+JNE adalah sebuah class dengan atribut private nama, idEkspedisi, idBarang, owner. serta mengimplementasi method dari interface DeliveryAPI yaitu :
 1. **tarifPengiriman(Double jarak, Double berat)**
 2. **requestPengiriman(String asal, String tujuan)**
 
 ### JNT
-JNT adalah sebuah class dengan atribut public nama, idEkspedisi, idBarang, owner. serta mengimplementasi method dari interface DeliveryAPI yaitu :
+JNT adalah sebuah class dengan atribut private nama, idEkspedisi, idBarang, owner. serta mengimplementasi method dari interface DeliveryAPI yaitu :
 1. **tarifPengiriman(Double jarak, Double berat)**
 2. **requestPengiriman(String asal, String tujuan)**
 
 ### SiCepat
-SiCepat adalah sebuah class dengan atribut public nama, idEkspedisi, idBarang, owner. serta mengimplementasi method dari interface DeliveryAPI yaitu :
+SiCepat adalah sebuah class dengan atribut private nama, idEkspedisi, idBarang, owner. serta mengimplementasi method dari interface DeliveryAPI yaitu :
 1. **tarifPengiriman(Double jarak, Double berat)**
 2. **requestPengiriman(String asal, String tujuan)**
 
 ## Penjelasan Relasi Antar Class
+
+### Class Ecommerce dengan Interface DeliveryAPI
+
+### Class JNE, SiCepat, dan JNT dengan Interface DeliveryAPI
+Hubungan dari ketiga kelas JNE, SiCepat, dan JNT sebagai penyedia layanan ekspedisi adalah mengimplementasikan Interface DeliveryAPI dalam class tersebut, hal ini berarti setiap class tersebut harus menerapkan method yang ada di dalam Interface DeliveryAPI.
