@@ -23,6 +23,14 @@ class JNE {
 
 class JNT {
  +hitungOngkir(double jarak, double berat)
+ +terimaRequestPemesanan(DetailPemesanan dp): Resi
 }
+
+class SiCepat {
+ +hitungOngkir(double jarak, double berat)
+ +terimaRequestPemesanan(DetailPemesanan dp): Resi 
+}
+
+Ecommerce "1.." -- "1.." JasaPengiriman
 
 @enduml
