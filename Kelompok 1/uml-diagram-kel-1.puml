@@ -1,0 +1,52 @@
+UML
+
+@startuml Main
+
+Ecommerce -- deliveryAPI
+deliveryAPI <|-- Sicepat
+deliveryAPI <|-- JNT
+deliveryAPI <|-- JNE
+
+class Ecommerce {
++ asalPengiriman String
++ tujuanPengiriman String
++ namaPengirim String
++ namaPenerima String
++ jarakPengirim double
++ beratBarang double
++ setRequestPengiriman(String asalPengiriman, String tujuanPengiriman, String namaPengirim, String namaPenerima)
++ getTarif()
+}
+
+class deliveryAPI {
++ hargaPerKm double
++ hargaPerKg double
++ setTarif(Double jarakPengiriman, Double beratBarang)
++ getRequestPengiriman()
+}
+
+class Sicepat {
++ tarif double
++ hargaPerKm double
++ hargaPerKg double
++ setTarif(Double jarakPengiriman, Double beratBarang)
++ getRequestPengiriman()
+}
+
+class JNT {
++ tarif double
++ hargaPerKm double
++ hargaPerKg double
++ setTarif(Double jarakPengiriman, Double beratBarang)
++ getRequestPengiriman()
+}
+
+class JNE {
++ tarif double
++ hargaPerKm double
++ hargaPerKg double
++ setTarif(Double jarakPengiriman, Double beratBarang)
++ getRequestPengiriman()
+}
+
+@enduml
