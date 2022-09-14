@@ -19,7 +19,7 @@ class Store{
   -String[] ekspedisi = {"Sicepat", "JNE", "JNT"};
 
   +void cekTarif(String tipeProduk, String asal, String tujuan, Float beratProduk)
-  +void pesanProduk(Sting namaToko, String namaProduk, String tipeProduk, Float beratProduk, Double harga, String pembeli, String asal, String tujuan)
+  +void pesanProduk(String namaToko, String namaProduk, String tipeProduk, Float beratProduk, Double harga, String pembeli, String asal, String tujuan)
 }
 
 interface DeliveryApi{
