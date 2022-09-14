@@ -1,5 +1,6 @@
 # Penjelasan UML Diagram
-File [uml-diagram-kel-2.puml](https://github.com/andrisan-ub/pbpu-a-2022/blob/2-uml-kelompok-2/Kelompok%202/uml-diagram-kel-2.puml) berisi *source code* UML Diagram yang ditulis dalam syntax **PlantUML**.
+File [uml-diagram-kel-2.puml](https://github.com/andrisan-ub/pbpu-a-2022/blob/2-uml-kelompok-2/Kelompok%202/uml-diagram-kel-2.puml) berisi *source code* UML Diagram yang ditulis dalam syntax **PlantUML**. Berikut tampilan UML Diagramnya:
+![UMLDiagram](uml-diagram-kel-2.png)
 ## Penjelasan Komponen Pada Setiap Class Diagram
 
 ### ECommerce
