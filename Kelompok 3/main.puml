@@ -5,13 +5,13 @@ Expedition <|-- Jnt
 Expedition <|-- Jne
 Expedition <|-- Sicepat
 class Ecommerce {
-    - weight int
-    - quantity int
-    - price int
-    - destination string
-    - source string
-    + getTarif(weight, quantity, price, source, destination) void
-    + getPickup(weight, quantity, price, expname, source, destination) void
+    - weight: int
+    - quantity: int
+    - price: int
+    - destination: string
+    - source: string
+    + getTarif(weight, quantity, price, source, destination): void
+    + getPickup(weight, quantity, price, expname, source, destination): void
 }
 
 interface Expedition {
@@ -20,24 +20,24 @@ interface Expedition {
 }
 
 class Jne {
-    - pilihan_jasa string
-    - layanan_jasa string
-    + returnTarif(weight, source, destination, Expedition) void
-    + menerimaRequest (source, destination) void
+    - pilihan_jasa: string
+    - layanan_jasa: string
+    + returnTarif(weight, source, destination, Expedition): void
+    + menerimaRequest (source, destination): void
 }
 
 class Jnt {
-    - pilihan_jasa string
-    - layanan_jasa string
-    + returnTarif(weight, source, destination, Expedition) void
-    + menerimaRequest (source, destination) void
+    - pilihan_jasa: string
+    - layanan_jasa: string
+    + returnTarif(weight, source, destination, Expedition): void
+    + menerimaRequest (source, destination): void
 }
 
 class Sicepat {
-    - pilihan_jasa string
-    - layanan_jasa string
-    + returnTarif(weight, source, destination, Expedition) void
-    + menerimaRequest (source, destination) void
+    - pilihan_jasa: string
+    - layanan_jasa: string
+    + returnTarif(weight, source, destination, Expedition): void
+    + menerimaRequest (source, destination): void
 }
 
 
