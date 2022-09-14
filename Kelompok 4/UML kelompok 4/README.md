@@ -16,17 +16,19 @@
 | ----------- | ----------- |
 | storeName | String |
 | productName | String |
-| productWight | Double |
+| productType | String |
+| productWight | Float |
 | price | Double |
 | buyer | String |
+| expedition | String[] |
 | origin | String |
 | destination | String |
 
 **Methode yang terdapat pada class Store**
 | Name | Type | Description |
 | ----------- | ----------- | ----------- |
-| shippingRate | void | Melakukan pengecekan tarif pengiriman produk yang ingin dibeli pembeli berdasarkan attribute alamat asal dan tujuan serta berat dari produk yang ingin dibeli menggunakan akses methode melalui interface|
-| requestSend | void | Melakukan request pengiriman produk berdasarkan attribute yang terdapat pada class **Store** |
+| shippingRate | void | Melakukan pengecekan tarif pengiriman produk yang ingin dibeli pembeli berdasarkan attribute tipe produk, alamat asal dan tujuan serta berat dari produk yang ingin dibeli menggunakan akses methode melalui interface|
+| requestSend | void | Melakukan request pengiriman produk berdasarkan attribute yang terdapat pada class **Store**, serta menggunakan interface request pengiriman untuk melakukan permohonan pengiriman melalui ekspedisi yang dipilih |
 
 ### DeliveryAPI
 
