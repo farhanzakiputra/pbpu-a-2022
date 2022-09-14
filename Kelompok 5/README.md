@@ -1,8 +1,10 @@
 # Penjelasan UML Diagram Kelompok 5
 
 #### Shipment
+Shipment merupakan komponen utama untuk menciptakan composition Order sehingga dengan tidak adanya Shipment maka tidak ada order
 
 #### Order
+Order bertujuan untuk mendapatkan informasi customer melalui Shipment
 
 #### APIdelivery
 APIdelivery merupakan class interface yanng memiliki 3 atribut dan 2 method public, yaitu: reqPengiriman dan tarifPengiriman
