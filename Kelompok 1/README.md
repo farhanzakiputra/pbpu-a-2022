@@ -23,3 +23,11 @@
 
 ### JNE
 **Class JNE** memiliki **tiga atribut** bersifat public dengan tipe data double yaitu tarif, hargaPerKm, hargaPerKm. Class ini memiliki **dua method** yaitu setTarif(Double jarakPengiriman, Double beratBarang), dan method getRequestPengiriman().
+
+### Relationship Class 
+
+**Class E-Commerce dengan Interface DeliveryAPI**
+Hubungan antara class E-Commerce dengan Interface DeliveryAPI adalah asosiasi yang dimana pada dasarnya hubungan asosiasi antara dua objek atau lebih menunjukkan jalur komunikasi (juga disebut tautan) di antara mereka sehingga satu objek dapat mengirim pesan ke yang lain. Asosiasi class E-commerce dapat berinteraksi dengan class jasa pengiriman (jne, jnt, siCepat) menggunakan method-methodnya, tetapi hanya dengan jasa pengiriman yang telah mengimplementasikan interface DeliveryAPI.
+
+**Class Interface DeliveryAPI dengan class Sicepat, JNT, dan JNE**
+Hubungan antara ketiga class jasa pengiriman yaitu Sicepat, JNT, JNE dan class Interface Delivery API merupakan Inheritance, yang dimana class deliveryAPI berperan menjadi superclass sedangkan class Sicepat, JNT, dan JNE berperan sebagai subclass yang dimana setiap classnya harus memiliki method yang ada pada deliveryAPI untuk mengimplementasikan interfacenya.
