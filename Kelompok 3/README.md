@@ -2,6 +2,8 @@
 ## Definisi UML Diagram
 UML Diagram merupakan diagram yang digunakan sebagai representasi visual objek, kondisi, dan proses yang terjadi di dalam sebuah sistem.
 
+![image](class.png)
+
 ## Komponen-Komponen UML Diagram
 ### 1. Ecommerce
 Ecommerce merupakan sebuah class yang terdiri dari atribut weight(int), quantity(int), price(int), destination(string), dan source(int). Seluruh atribut ini bersifat private. Class ini juga memiliki 2 buah method, yaitu :
