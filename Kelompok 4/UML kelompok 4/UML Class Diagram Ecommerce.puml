@@ -8,7 +8,7 @@ DeliveryApi <|-- JNT
 Store --> DeliveryApi
 
 class Store{
-  -Sting namaToko
+  -String namaToko
   -String namaProduk
   -String tipeProduk
   -Float beratProduk
