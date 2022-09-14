@@ -22,7 +22,7 @@ class JNE{
 
     'method'
     +reqPengiriman(): String
-    +tarifPengiriman(asalPengiriman: String, tujuanPengiriman: String, beratPengiriman: int): int
+    +tarifPengiriman(asalPengiriman, tujuanPengiriman, beratPengiriman): int
 }
 
 class JNT{
@@ -33,7 +33,7 @@ class JNT{
 
     'method'
     +reqPengiriman(): String
-    +tarifPengiriman(asalPengiriman: String, tujuanPengiriman: String, beratPengiriman: int): int
+    +tarifPengiriman(asalPengiriman, tujuanPengiriman, beratPengiriman): int
 }
 
 class SiCepat{
@@ -44,13 +44,13 @@ class SiCepat{
 
     'method'
     +reqPengiriman(): String
-    +tarifPengiriman(asalPengiriman: String, tujuanPengiriman: String, beratPengiriman: int): int
+    +tarifPengiriman(asalPengiriman, tujuanPengiriman, beratPengiriman): int
 }
 
 interface APIdelivery {
     'method'
-    +{abstract} reqPengiriman(noInvoice: boolean)
-    +{abstract} tarifPengiriman(asalPengiriman: String, tujuanPengiriman: String, beratPengiriman: int)
+    +{abstract} reqPengiriman(noInvoice)
+    +{abstract} tarifPengiriman(asalPengiriman, tujuanPengiriman, beratPengiriman): int
 }
 
 JNE ..|> APIdelivery
