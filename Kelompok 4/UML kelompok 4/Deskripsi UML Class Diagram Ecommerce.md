@@ -1,4 +1,34 @@
-## DeliveryAPI
+## Pengembangan Beroritentasi Penggunaan Ulang
+
+**Kelompok 4**
+
+1. 215150409111010 M.FAHMI ARESHA
+2. 215150409111016 FAIZ AL QURNI
+3. 205150401111024 Nur Izzah Maula Ramadhani
+4. 205150401111029 Syahra Rizkia Andina
+
+## Penjelasan UML Diagram
+
+### Store
+
+**Class Store memiliki atribut**
+| Name | Type Data |
+| ----------- | ----------- |
+| storeName | String |
+| productName | String |
+| productWight | Double |
+| price | Double |
+| buyer | String |
+| origin | String |
+| destination | String |
+
+**Methode yang terdapat pada class Store**
+| Name | Type | Description |
+| ----------- | ----------- |
+| shippingRate | void | Melakukan pengecekan tarif pengiriman produk yang ingin dibeli pembeli berdasarkan attribute alamat asal dan tujuan serta berat dari produk yang ingin dibeli menggunakan akses methode melalui interface|
+| requestSend | void | Melakukan request pengiriman produk berdasarkan attribute yang terdapat pada class **Store** |
+
+### DeliveryAPI
 
 <h3 style="text-align: justify">
 Class DevelieryApi merupakan interface. interface adalah penghubung antar objek. Interface bersifat abstrak, Class ini memiliki relasi Extension, sehingga method tersebut harus di implementasikan dalam kelas turunannya. Dalam kasus ini class tersebut di implementasikan untuk jasa pengiriman yaitu JNE, Sicepat dan JNT. class ini terdiri dari 2 method yaitu: </h3>
@@ -7,7 +37,7 @@ Class DevelieryApi merupakan interface. interface adalah penghubung antar objek.
   <li>+requestPengiriman(asal,tujuan) : String. Method ini digunakan untuk mengirimkan pengiriman dengan parameter asal dan tujuan bertype String.</li>
 </ol>
 
-## SiCepat
+### SiCepat
 
 <h3 style="text-align: justify">
 Class SiCepat merupakan sebuah class yang memiliki beberapa atribut. Atribut- atribut tersebut adalah idPengiriman, alamatPenerima, tanggalPengiriman, namaPengirim , namaPenerima, jenisProduk, berat, statusPengiriman. Class ini pula mengimplemantasi method dari interface DeliveryAPI yaitu :</h3>
@@ -16,7 +46,7 @@ Class SiCepat merupakan sebuah class yang memiliki beberapa atribut. Atribut- at
   <li>+requestPengiriman(asal,tujuan) : String. Method ini digunakan untuk mengirimkan pengiriman dengan parameter asal dan tujuan bertype String.</li>
 </ol>
 
-## JNE
+### JNE
 
 <h3 style="text-align: justify">
 Class JNE merupakan sebuah class yang memiliki beberapa atribut. Atribut- atribut tersebut adalah idPengiriman, alamatPenerima, tanggalPengiriman, namaPengirim, namaPenerima, jenisProduk, berat, statusPengiriman. Class ini pula mengimplemantasi method dari interface DeliveryAPI yaitu :</h3>
@@ -25,7 +55,7 @@ Class JNE merupakan sebuah class yang memiliki beberapa atribut. Atribut- atribu
   <li>+requestPengiriman(asal,tujuan) : String. Method ini digunakan untuk mengirimkan pengiriman dengan parameter asal dan tujuan bertype String.</li>
 </ol>
 
-## JNT
+### JNT
 
 <h3 style="text-align: justify">
 Class JNT merupakan sebuah class yang memiliki beberapa atribut. Atribut- atribut tersebut adalah idPengiriman, alamatPenerima, tanggalPengiriman, namaPengirim , namaPenerima, jenisProduk, berat, statusPengiriman. Class ini pula mengimplemantasi method dari interface DeliveryAPI yaitu :</h3>

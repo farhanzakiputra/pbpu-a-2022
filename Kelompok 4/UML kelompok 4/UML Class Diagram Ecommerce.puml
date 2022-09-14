@@ -13,11 +13,11 @@ class Store{
   -Double productWight
   -Double price
   -String buyer
-  -String senderAddress
-  -String recipientAddress
+  -String origin
+  -String destination
 
-  +void shippingRate(String senderAdress, String ricipentAddress, Double productWeight)
-  +void requestSend(Sting storeName, String productName, Double productWight, Double price, String buyer, String senderAddress, String recipientAddress)
+  +void shippingRate(String origin, String destination, Double productWeight)
+  +void requestSend(Sting storeName, String productName, Double productWight, Double price, String buyer, String origin, String destination)
 }
 
 interface DeliveryApi{
