@@ -1,5 +1,3 @@
-UML
-
 @startuml Main
 
 Ecommerce -- deliveryAPI
