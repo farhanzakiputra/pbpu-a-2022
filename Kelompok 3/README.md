@@ -1,4 +1,4 @@
-# Pengembangan Beroritentasi Penggunaan Ulang
+# Pengembangan Berorientasi Penggunaan Ulang (PBPU)
 ## Definisi UML Diagram
 UML Diagram merupakan diagram yang digunakan sebagai representasi visual objek, kondisi, dan proses yang terjadi di dalam sebuah sistem.
 
