@@ -1,0 +1,24 @@
+@startuml
+ E-Commerce --> deliveryAPI
+ Sicepat ..|> deliveryAPI
+ JNT ..|> deliveryAPI
+ JNE ..|> deliveryAPI
+ 
+ class E-Commerce{
+	- deliveryAPI : obj
+	- orderId : int
+	- userAddress : String
+	- sellerAddress : String
+	- itemName : String
+	- itemWeight : double
+	- itemPrice : double
+	- deliveryDistance : double
+	- deliveryType : String
+	+ sendDeliveryRequest (orderId)
+ }
+
+interface deliveryAPI{
+	+ deliveryRequest()
+	+ totalDeliveryPrice()
+}
+@enduml
