@@ -14,15 +14,15 @@
 **Class Store memiliki atribut**
 | Name | Type Data |
 | ----------- | ----------- |
-| storeName | String |
-| productName | String |
-| productType | String |
-| productWight | Float |
-| price | Double |
-| buyer | String |
-| expedition | String[] |
-| origin | String |
-| destination | String |
+| namaToko | String |
+| namaProduk | String |
+| tipeProduk | String |
+| beratProduk | Float |
+| harga | Double |
+| pembeli | String |
+| ekspedisi | String[] |
+| asal | String |
+| tujuan | String |
 
 **Methode yang terdapat pada class Store**
 | Name | Type | Description |
