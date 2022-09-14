@@ -65,3 +65,11 @@ Class JNT merupakan sebuah class yang memiliki beberapa atribut. Atribut- atribu
   <li>+tarifPengiriman(jarak,berat): Int. Method ini digunakan untuk memasukkan tarif pengiriman dengan parameter jarak dan berat bertype integer.</li>
   <li>+requestPengiriman(asal,tujuan) : String. Method ini digunakan untuk mengirimkan pengiriman dengan parameter asal dan tujuan bertype String.</li>
 </ol>
+
+### Relationship Class
+
+#### Class Store dengan Interface DeliveryAPI 
+Class Store dengan Interface DeliveryAPI memiliki hubungan asosiasi yang artinya adalah setiap objek memiliki siklus hidupnya sendiri dan tidak memiliki ownership. Hubungan asosiasi ini menunjukkan jalur komunikasi sehingga satu objek dapat mengirim pesan ke yang lain. Asosiasi class Store dapat berinteraksi dengan class jasa pengiriman (jne, jnt, siCepat) menggunakan method-methodnya, tetapi hanya dengan jasa pengiriman yang telah mengimplementasikan interface DeliveryAPI.
+
+#### Class Interface DeliveryAPI dengan class Sicepat, JNT, dan JNE
+Ketiga class jasa pengiriman, yaitu Sicepat, JNT, JNE dengan class Interface DeliveryAPI memiliki hubungan inheritance (pewarisan). Di sini, class DeliveryAPI berperan menjadi superclass dan class Sicepat, JNT, serta JNE berperan sebagai subclass. Subclass di sini harus memiliki method yang ada pada DeliveryAPI untuk mengimplementasikan interfacenya.
