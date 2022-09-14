@@ -8,8 +8,16 @@ DeliveryApi <|-- JNT
 Store --> DeliveryApi
 
 class Store{
-  + deliveryType : DeliveryAPI
-  + void delivery(deliveryType : DeliveryAPI)
+  -Sting storeName
+  -String productName
+  -Double productWight
+  -Double price
+  -String buyer
+  -String senderAddress
+  -String recipientAddress
+
+  +void shippingRate(String senderAdress, String ricipentAddress, Double productWeight)
+  +void requestSend(Sting storeName, String productName, Double productWight, Double price, String buyer, String senderAddress, String recipientAddress)
 }
 
 interface DeliveryApi{
