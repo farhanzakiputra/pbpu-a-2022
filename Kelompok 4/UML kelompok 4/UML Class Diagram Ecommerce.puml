@@ -5,6 +5,7 @@
 DeliveryApi <|-- Sicepat
 DeliveryApi <|-- JNE
 DeliveryApi <|-- JNT
+Store --> DeliveryApi
 
 class Store{
   + deliveryType : DeliveryAPI
@@ -17,16 +18,43 @@ interface DeliveryApi{
 }
 
 Class Sicepat{
+    -String idPengiriman
+	  -String alamatPenerima
+	  -Date tanggalPengiriman
+	  -String namaPengirim 
+	  -String namaPenerima
+	  -String jenisProduk
+	  -Float berat
+	  -String statusPengiriman
+  
     +tarifPengiriman(jarak,berat): Int
     +requestPengiriman(asal,tujuan) : String
 }
 
 Class JNE{
+    -String idPengiriman
+	  -String alamatPenerima
+	  -Date tanggalPengiriman
+	  -String namaPengirim 
+	  -String namaPenerima
+	  -String jenisProduk
+  	-Float berat
+  	-String statusPengiriman
+  
     +tarifPengiriman(jarak,berat): Int
     +requestPengiriman(asal,tujuan) : String
 }
 
 Class JNT{
+    -String idPengiriman
+	  -String alamatPenerima
+	  -Date tanggalPengiriman
+	  -String namaPengirim 
+	  -String namaPenerima
+	  -String jenisProduk
+	  -Float berat
+	  -String statusPengiriman
+  
     +tarifPengiriman(jarak,berat): Int
     +requestPengiriman(asal,tujuan) : String
 }
