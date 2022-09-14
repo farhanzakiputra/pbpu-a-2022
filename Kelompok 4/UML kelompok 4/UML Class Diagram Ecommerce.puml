@@ -8,18 +8,18 @@ DeliveryApi <|-- JNT
 Store --> DeliveryApi
 
 class Store{
-  -Sting storeName
-  -String productName
-  -String productType
-  -Float productWight
-  -Double price
-  -String buyer
-  -String origin
-  -String destination
-  -String[] expedition = {"Sicepat", "JNE", "JNT"};
+  -Sting namaToko
+  -String namaProduk
+  -String tipeProduk
+  -Float beratProduk
+  -Double harga
+  -String pembeli
+  -String asal
+  -String tujuan
+  -String[] ekspedisi = {"Sicepat", "JNE", "JNT"};
 
-  +void shippingRate(String productType, String origin, String destination, Float productWeight)
-  +void requestSend(Sting storeName, String productName, String productType, Float productWight, Double price, String buyer, String origin, String destination)
+  +void cekTarif(String tipeProduk, String asal, String tujuan, Float beratProduk)
+  +void pesanProduk(Sting namaToko, String namaProduk, String tipeProduk, Float beratProduk, Double harga, String pembeli, String asal, String tujuan)
 }
 
 interface DeliveryApi{
