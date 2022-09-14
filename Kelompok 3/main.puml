@@ -15,29 +15,29 @@ class Ecommerce {
 }
 
 interface Expedition {
-    +returnTarif(weight, source, destination)
-    +menerimaRequest(source, destination)
+    + returnTarif(weight, source, destination): void
+    + menerimaRequest(expname,source, destination): void
 }
 
 class Jne {
     - pilihan_jasa: string
     - layanan_jasa: string
     + returnTarif(weight, source, destination): void
-    + menerimaRequest (source, destination): void
+    + menerimaRequest (expname, source, destination): void
 }
 
 class Jnt {
     - pilihan_jasa: string
     - layanan_jasa: string
     + returnTarif(weight, source, destination): void
-    + menerimaRequest (source, destination): void
+    + menerimaRequest (expname, source, destination): void
 }
 
 class Sicepat {
     - pilihan_jasa: string
     - layanan_jasa: string
     + returnTarif(weight, source, destination): void
-    + menerimaRequest (source, destination): void
+    + menerimaRequest (expname, source, destination): void
 }
 
 
