@@ -30,7 +30,8 @@ SiCepat adalah sebuah class dengan atribut private nama, idEkspedisi, idBarang, 
 
 ## Penjelasan Relasi Antar Class
 
-### Class Ecommerce dengan Interface DeliveryAPI
+### Class E-commerce dengan Interface DeliveryAPI
+Hubungan class E-commerce dengan Interface DeliveryAPI adalah class asosiasi, dimana class E-commerce dapat berinteraksi dengan class-class ekspedisi menggunakan method **delivery()** namun hanya dengan ekspedisi yang telah mengimplementasi Interface DeliveryAPI, sehingga asosiasi dilakukan melalui perantara interface DeliveryAPI.
 
 ### Class JNE, SiCepat, dan JNT dengan Interface DeliveryAPI
 Hubungan dari ketiga kelas JNE, SiCepat, dan JNT sebagai penyedia layanan ekspedisi adalah mengimplementasikan Interface DeliveryAPI dalam class tersebut, hal ini berarti setiap class tersebut harus menerapkan method yang ada di dalam Interface DeliveryAPI.
