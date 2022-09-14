@@ -22,11 +22,7 @@ class JNE{
 
     'method'
     +reqPengiriman(): String
-    +tarifPengiriman(
-        asalPengiriman: String, 
-        tujuanPengiriman: String, 
-        beratPengiriman: int
-    ): int
+    +tarifPengiriman(asalPengiriman: String, tujuanPengiriman: String, beratPengiriman: int): int
 }
 
 class JNT{
@@ -37,11 +33,7 @@ class JNT{
 
     'method'
     +reqPengiriman(): String
-    +tarifPengiriman(
-        asalPengiriman: String, 
-        tujuanPengiriman: String, 
-        beratPengiriman: int
-    ): int
+    +tarifPengiriman(asalPengiriman: String, tujuanPengiriman: String, beratPengiriman: int): int
 }
 
 class SiCepat{
@@ -52,27 +44,19 @@ class SiCepat{
 
     'method'
     +reqPengiriman(): String
-    +tarifPengiriman(
-        asalPengiriman: String, 
-        tujuanPengiriman: String, 
-        beratPengiriman: int
-    ): int
+    +tarifPengiriman(asalPengiriman: String, tujuanPengiriman: String, beratPengiriman: int): int
 }
 
 interface APIdelivery {
     'method'
     +{abstract} reqPengiriman(noInvoice: boolean)
-    +{abstract} tarifPengiriman(
-        asalPengiriman: String, 
-        tujuanPengiriman: String, 
-        beratPengiriman: int
-    )
+    +{abstract} tarifPengiriman(asalPengiriman: String, tujuanPengiriman: String, beratPengiriman: int)
 }
 
 JNE ..|> APIdelivery
 JNT ..|> APIdelivery
 SiCepat ..|> APIdelivery
-ECommerce <-- APIdelivery
+ECommerce --> APIdelivery
 
 Shipment *-- Order : composition
 
