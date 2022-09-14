@@ -1,6 +1,6 @@
 @startuml Main
 
-Ecommerce --> Expedition
+Ecommerce --  Expedition
 Expedition <|-- Jnt
 Expedition <|-- Jne
 Expedition <|-- Sicepat
