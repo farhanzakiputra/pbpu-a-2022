@@ -15,3 +15,16 @@ Class Ecommerce memiliki sembilan atribut bersifat public diantaranya atribut be
 
 ### DeliveryAPI
 Interface deliveryAPI memiliki dua atribut bersifat public dengan tipe data double yaitu deliveryRequest dan totalDeliveryPrice.
+
+### DeliveryService
+Class deliveryService memiliki empat atribut bersifat public dengan tipe data double yaitu pricePerKm, pricePerKg, priceRate, dan tipe data int yaitu deliveryId. 
+
+
+### Sicepat
+Class Sicepat memiliki atribut dan method yang berada di deliveryService.
+
+### JNT
+Class JNT memiliki atribut dan method yang berada di deliveryService.
+
+### JNE
+Class JNE memiliki atribut dan method yang berada di deliveryService.
