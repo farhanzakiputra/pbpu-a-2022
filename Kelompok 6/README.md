@@ -6,4 +6,4 @@ Merupakan sebuah interface yang terdiri dari metode hitungOngkir yang berfungsi 
 Merupakan kelas yang merepresentasikan E-commerce seperti Shopee, Tokopedia, dan lain sebagainya. Kelas ini memiliki metode kirimRequestPengiriman dengan parameter DetailPemesanan untuk mengirim request pengiriman ke JasaPengiriman.
 ## Penjelasan Relasi Antar Class
 ### Class JNE, JNT, dan SiCepat dengan Class JasaPengiriman
-Hubungan dari class JNE, JNT, dan SiCepat dengan class JasaPengriman adalah. mengimplementasikan inheritance yang dimana JasaPengiriman berperan sebagai parent class.
+Hubungan dari class JNE, JNT, dan SiCepat dengan class JasaPengriman adalah mengimplementasikan inheritance yang dimana JasaPengiriman berperan sebagai parent class dan class JNE, JNT, dan SiCepat berperan sebagai sub class.
