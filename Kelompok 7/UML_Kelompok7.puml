@@ -21,4 +21,26 @@ interface deliveryAPI{
 	+ deliveryRequest()
 	+ totalDeliveryPrice()
 }
+
+class DeliveryService{
+	- deliveryId : int
+	- pricePerKm : double
+	- pricePerKg : double
+	- priceRate : double
+	+ deliveryRequest()
+	+ totalDeliveryPrice(itemWeight, itemPrice, deliveryDistance)
+}
+
+class Sicepat{
+
+}
+
+class JNT{
+
+}
+
+class JNE{
+
+}
+
 @enduml
