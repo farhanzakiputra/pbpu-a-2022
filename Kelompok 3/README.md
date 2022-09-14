@@ -14,23 +14,31 @@ Method ini juga bersifat void dan public, serta memiliki 6 parameter, yaitu weig
 
 ### 2. Expedition
 Expedition merupakan sebuah interface yang memiliki 2 abstract method. Interface sendiri memungkinkan berbagai konstanta ataupun method yang dapat digunakan oleh sejumlah kelas. Kedua method ini nantinya akan digunakan di masing-masing jenis ekspedisi. Kedua method tersebut terdiri dari :
+
 a) returnTarif(int weight, string source, string destination)
 Method ini ini memiliki 3 parameter yang berfungsi untuk mereturn tarif pengiriman sesuai jenis masing-masing class.
+
 b) menerimaRequest(string expname, string source, string destination)
 Method ini memiliki 3 parameter yang berfungsi untuk mereturn jenis ekspedisi yang digunakan.
 
 ### 3. Jnt
 Class Jnt berisi 2 atribut dengan sifat private, yaitu pilihan_jasa dan layanan_jasa dengan tipe data string. Selain itu, class ini memiliki 2 method yang diimplementasikan dari interface Expedition, antara lain :
+
 a) returnTarif(weight, source, destination)
+
 b) menerimaRequest(expname, source, destination)
 
 ### 4. Jne
 Class Jne berisi 2 atribut dengan sifat private, yaitu pilihan_jasa dan layanan_jasa dengan tipe data string. Selain itu, class ini memiliki 2 method yang diimplementasikan dari interface Expedition, antara lain :
+
 a) returnTarif(weight, source, destination)
+
 b) menerimaRequest(expname, source, destination)
 
 ### 5. Sicepat
 Class Sicepat berisi 2 atribut dengan sifat private, yaitu pilihan_jasa dan layanan_jasa dengan tipe data string. Selain itu, class ini memiliki 2 method yang diimplementasikan dari interface Expedition, antara lain :
+
 a) returnTarif(weight, source, destination)
+
 b) menerimaRequest(expname, source, destination)
 
